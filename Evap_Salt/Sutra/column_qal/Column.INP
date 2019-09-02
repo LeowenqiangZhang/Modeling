@@ -31,7 +31,7 @@
 ## [NSCH]         [NPCYC]         [NUCYC]
         1               1               1
 ## [SCHNAM]        [SCHTYP]         [CREFT]       [SCALT]       [NTMAX]     [TIMEI]     [TIMEL]   [TIMEC]   [NTCYC]  [TCMULT]   [TCMIN]      [TCMAX]
-'TIME_STEPS'   'TIME CYCLE'       'ELAPSED'         5.         480000         0.      480000.        1.     300        2.        1.              1.
+'TIME_STEPS'   'TIME CYCLE'       'ELAPSED'         5.         1000000         0.      1000000.        1.     300        2.        1.              1.
 '-'
 ##
 ##  DATASET 7:  Iteration and Matrix Solver Controls
@@ -113,7 +113,7 @@
 ##     HCS  -- HEAT CAPACITY OF SOLID GRAIN   [J/KG/K]
 ##     FC   -- THE PROPORTION OF CLAY IN THE SOIL  0<FC<1
 ##     [HSC]      [HER]       [ROUS]    [HCS]   [FC]
-      6.0D2     1.95D-1     2.650D3    8.75D2   0.01
+      6.0D2     1.95D-1     3.960D3    8.75D2   0.01
 ##  DATASET 13H: SURFACE RESISTANCE TERM
 ##    AR  FITTING PARAMETER
 ##    BR  FITTING PARAMETER   
@@ -121,7 +121,7 @@
          6.9D-1  -1.04D-0
 ##  DATASET 13I: PARAMETERS FOR WATER RENTENTION CURVE
 ##      [SWRES1]     [AA1]     [VN1]     [SWRES2]     [AA2]     [VN2]
-          0.01        1.0E-4      1.5        0.15        2.4E4     2.85
+          0.074      1.63E-4      1.37        0.15        2.4E4     2.85
 #         0.1        4.E-4      8.5E0       0.30E0    5.0E-5     2.0E0
 ##  DATASET 13J: THERMAL CONDUCTIVITIES OF WATER AND LIQUID
 ##     TCS -- THERMAL CONDUCTIVITY OF SOIL  USUALLY BETWEEN 2-4 W/M/K
