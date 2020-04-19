@@ -24277,7 +24277,7 @@ C.....IBCSOP(IQP) MUST BE SET TO -1 TO INDICATE THAT QIN(-I)             BCTIME.
 C        AND/OR UIN(-I) HAVE BEEN SET BY SUBROUTINE BCTIME.              BCTIME.......18600
       IBCSOP(IQP) = -1                                                   BCTIME.......18700
 C	CALL DELLAUTHETA(DELL,TAUTH,IQP,NDPT,NREF,POR1,IQSOP,SW,Y)
-	IF ( PITER(IABS(I)).LT.-2.068D+03) THEN                                              ! SATURATION
+	IF ( PITER(IABS(I)).LT.AP) THEN                                              ! SATURATION
 	IF ( NDPT(IQP).EQ.1)THEN                                                  ! FIRST LAYER EVAPORATION
 	CALL SALTRESIST(RSC,UVM,UITER(IABS(I)),SM(IABS(I)),HAREA(IQP))
 	CALL AEROSIST(RAV,MAR)
@@ -24304,7 +24304,7 @@ C     II IS THE GLOBAL SEQUENCE OF THE NODE 1-NN
 	  CALL NNODE(IIQP,J,IQP,NDPT,NREF,NSOPI)
         IF (IIQP.NE.0.) THEN                                                         ! THE NEXT NODE SHOULD BE EXIST
 	    II=IQSOP(IIQP)
-          IF (PITER(IABS(I)).LT.-2.068D+03)THEN                                               ! THE NEXT NODE SHOULD NOT BE SATURATED
+          IF (PITER(IABS(I)).LT.BP)THEN                                               ! THE NEXT NODE SHOULD NOT BE SATURATED
 	     IF (J.EQ.1)THEN 
 		   X1=X(IABS(I))
 	       X2=X(IABS(II))
